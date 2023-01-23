@@ -12,7 +12,7 @@ const DisplayEntries = (props) => {
         <tbody>
           {props.parentEntries.map((entry, index) => {   //Using Js, we go into the entries array and return data.
             return (
-              <tr>
+              <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{entry.weight}</td>
                 <td>{entry.date}</td>
